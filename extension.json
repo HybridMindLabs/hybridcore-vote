@@ -1,0 +1,23 @@
+{
+    "id": "hybridcore/vote",
+    "name": "Vote",
+    "version": "1.0.0",
+    "description": "Let players vote for your servers on listing sites and reward them automatically — with in-game rewards via the game-server bridge and a top-voters leaderboard.",
+    "author": "HybridMind Labs",
+    "type": "official",
+    "provider": "Hybridcore\\Vote\\VoteServiceProvider",
+    "routes": {
+        "web": "routes/web.php",
+        "admin": "routes/admin.php",
+        "api": "routes/api.php"
+    },
+    "migrations": "database/migrations",
+    "config": "config/vote.php",
+    "lang": "resources/lang",
+    "lang_namespace": "vote",
+    "requires": {
+        "core": ">=0.3.0"
+    },
+    "seeder": "Hybridcore\\Vote\\Database\\Seeders\\DefaultSeeder",
+    "schedule": "routes/schedule.php"
+}
