@@ -15,6 +15,7 @@
     "config": "config/vote.php",
     "lang": "resources/lang",
     "lang_namespace": "vote",
+    "update_url": "https://api.github.com/repos/HybridMindLabs/hybridcore-vote/releases/latest",
     "requires": {
         "core": ">=0.3.0"
     },

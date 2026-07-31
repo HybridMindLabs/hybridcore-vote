@@ -3,7 +3,6 @@ import { Head, Link, router, useForm } from '@inertiajs/vue3';
 import { ThumbsUp, Plus, Pencil, Trash2, KeyRound, Copy, Check, ChevronLeft, X } from '@lucide/vue';
 import { ref } from 'vue';
 import AdminLayout from '@/layouts/AdminLayout.vue';
-import PageHeader from '@/components/UI/PageHeader.vue';
 
 interface Site {
     id: number; name: string; slug: string; vote_url: string; icon: string | null;

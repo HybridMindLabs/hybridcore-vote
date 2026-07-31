@@ -3,7 +3,6 @@
 namespace Hybridcore\Vote\Tests\Feature;
 
 use App\Models\User;
-use App\Services\Extensions\ExtensionAutoloader;
 use Hybridcore\Vote\Models\Vote;
 use Hybridcore\Vote\Models\VoteSite;
 use Hybridcore\Vote\Services\VoteService;
@@ -18,19 +17,6 @@ class VoteServiceTest extends TestCase
     {
         parent::setUp();
         file_put_contents(storage_path('installed.lock'), 'installed');
-    }
-
-    /**
-     * Runs before RefreshDatabase migrates — register the extension's
-     * autoloader and migration path so its tables are created.
-     */
-    protected function beforeRefreshingDatabase(): void
-    {
-        ExtensionAutoloader::register(
-            base_path('extensions/hybridcore/vote'),
-            ['namespace' => 'Hybridcore\\Vote'],
-        );
-        $this->app['migrator']->path(base_path('extensions/hybridcore/vote/database/migrations'));
     }
 
     protected function tearDown(): void
