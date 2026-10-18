@@ -2,7 +2,7 @@
     "name": "hybridmindlabs/hybridcore-vote",
     "description": "Official Vote extension for HybridCore — let players vote for your servers on listing sites and reward them automatically, with in-game rewards via the game-server bridge and a top-voters leaderboard.",
     "type": "hybridcore-extension",
-    "license": "proprietary",
+    "license": "PolyForm-Noncommercial-1.0.0",
     "homepage": "https://github.com/HybridMindLabs/hybridcore-vote",
     "authors": [
         {
