@@ -1,7 +1,7 @@
 {
   "id": "hybridcore/vote",
   "name": "Vote",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Let players vote for your servers on listing sites and reward them automatically — with in-game rewards via the game-server bridge and a top-voters leaderboard.",
   "author": "HybridMind Labs",
   "type": "official",
